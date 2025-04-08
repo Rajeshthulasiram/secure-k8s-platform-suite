@@ -1,0 +1,8 @@
+namespace: secure-app
+resources:
+  - ../../base
+patches:
+  - path: patch-frontend-replicas.yaml
+    target:
+      kind: Deployment
+      name: frontend
