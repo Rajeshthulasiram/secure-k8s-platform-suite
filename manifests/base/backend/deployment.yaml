@@ -17,6 +17,7 @@ spec:
         app: backend
         role: backend
     spec:
+      serviceAccountName: app-sa
       containers:
         - name: backend
           image: ghcr.io/rajeshthulasiram/backend:latest
