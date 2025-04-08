@@ -17,6 +17,7 @@ spec:
         app: mysql
         role: database
     spec:
+      serviceAccountName: app-sa
       containers:
         - name: mysql
           image: mysql:5.7
