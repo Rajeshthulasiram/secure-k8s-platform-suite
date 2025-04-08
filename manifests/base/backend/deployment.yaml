@@ -18,6 +18,8 @@ spec:
         role: backend
     spec:
       serviceAccountName: app-sa
+      imagePullSecrets:
+        - name: ghcr-secret
       containers:
         - name: backend
           image: ghcr.io/rajeshthulasiram/backend:latest
